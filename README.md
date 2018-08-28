@@ -1,1 +1,9 @@
-sudo docker run -v /home/laurent/projects/mnet_docker/topology_image/:/topology_image/ --env TARGET_HOST=10.1.0.1 --env FILE_EXTENSION=pdf docker-natlas
+
+How to launch the container
+
+```
+git clone https://github.com/LaurentDumont/docker-natlas.git
+cd docker-natlas
+sudo docker build . --tag docker-natlas
+sudo docker run -v $COMPLETE_PATH_HERE/topology_image/:/topology_image/ --env TARGET_HOST=$ROOT_HOST_HERE --env FILE_EXTENSION=pdf docker-natlas
+```
